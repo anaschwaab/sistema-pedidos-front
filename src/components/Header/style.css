@@ -1,0 +1,22 @@
+.header {
+    /* background-image: linear-gradient(270deg, #0575E6 0%, #02298A 84.79%, #021B79 100%); */
+    background-color: #021B79;
+}
+
+.header nav img {
+    width: 70px;
+    height: 70px;
+}
+
+.header nav a {
+    color: #696ba6;
+    text-decoration: none;
+}
+
+.header nav a:hover {
+    color: #eceafc;
+}
+
+.header h1 {
+    color: #d2d1de;
+}

@@ -1,0 +1,13 @@
+/* Estilo personalizado para o container dos cards */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Controla o tamanho dos cards */
+    grid-gap: 20px; /* Espaçamento entre os cards */
+}
+
+/* Estilo personalizado para o conteúdo dos cards */
+.cards-container .card-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divide o conteúdo do card em duas colunas */
+    grid-gap: 0.5rem; /* Espaçamento entre os elementos dentro do card */
+}

@@ -1,0 +1,12 @@
+.custom-toggle-button {
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: inherit;
+    color: #dbd8f7;
+    cursor: pointer;
+}
+
+.custom-toggle-button:hover {
+    color: #fdfcfe;
+}
