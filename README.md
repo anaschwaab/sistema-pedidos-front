@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+# Sistema de Pedidos
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Esse é um sistema de pedidos, que foi desenvolvido a partir de um desafio que me foi proposto, que permite a realização das operações CRUD (Create, Read, Update, Delete) para transportadoras, clientes, pedidos e produtos.
 
-## Available Scripts
+## Desafio:
 
-In the project directory, you can run:
+<div align = "center">
+  <img src="src/assets/images/desafio_proposto.jpeg" alt="logo" width="500" height="auto" />
+</div>
 
-### `npm start`
+## Modelagem de dados:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+A modelagem do banco de dados foi feita utilizando a ferramenta open source [BR Modelo Web](https://www.brmodeloweb.com/lang/pt-br/index.html)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<div align = "center">
+<img src="src/assets/images/modelagem_db.jpeg" alt="logo" width="500" height="auto" />
+</div>
 
-### `npm test`
+## 💻 **Tecnologias Principais**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[![REACT](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://https://reactjs.org/)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+[![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## **Tecnologias de Suporte**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Algumas tecnologias auxiliaram no desenvolvimento do projeto, dentre elas:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+- [![React Hook Form](https://img.shields.io/badge/React%20Hook%20Form-00D8FF?style=for-the-badge&logo=react&logoColor=white)](https://react-hook-form.com/)
+    - É uma biblioteca que facilita a criação e gerenciamento de formulários em aplicativos React, tornando o processo mais eficiente.
+- [![REACT ROUTER DOM](https://img.shields.io/badge/React%20Router%20DOM-CA4245?style=for-the-badge&logo=react-router&logoColor=white)](https://reactrouter.com/web/guides/quick-start)
+  - Utilizado para criação de rotas e navegação entre telas. Além de criar rotas protegidas e não protegidas, podemos utilizar dos seus parâmetros dinâmicos.
+- [![AXIOS](https://img.shields.io/badge/Axios-007ACC?style=for-the-badge&logo=axios&logoColor=white)](https://axios-http.com/)
+  - A biblioteca Axios foi utilizada para requisições HTTP e também para requisições com a _API_.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Executando o Projeto Localmente
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Para executar esse projeto certifique-se de ter o ambiente configurado com as seguintes ferramentas:
+- [Node.js](https://nodejs.org/en)
+- [MySQL](https://www.mysql.com/downloads/Building/)
+- [GIT](https://git-scm.com/downloads)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. **Importante**: É necessário seguir os passos abaixo tanto para o repositório do backend quanto para o repositório do frontend, respectivamente.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. **Clone o Repositório**:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   - Copie o link do repositório no Github ([Backend](https://github.com/anaschwaab/sistema-pedidos-back) | [Frontend](https://github.com/anaschwaab/sistema-pedidos-front)).
+   - Abra o terminal e navegue até a pasta onde você deseja clonar o projeto.
+   - Execute o comando abaixo, substituindo `link` pelo link do repositório que você copiou:
 
-### Code Splitting
+     ```bash
+     git clone link
+     ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+3. **Acesse o Diretório do Projeto**:
 
-### Analyzing the Bundle Size
+   - Navegue para o diretório do projeto usando o terminal. Você pode fazer isso com o comando:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+     ```bash
+     cd nome-do-projeto
+     ```
 
-### Making a Progressive Web App
+   Substitua `nome-do-projeto` pelo nome da pasta onde o projeto foi clonado.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+4. **Instale as Dependências**:
 
-### Advanced Configuration
+   - Execute o seguinte comando para instalar as dependências do projeto:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+     ```bash
+     npm install
+     ```
 
-### Deployment
+5. **Inicie o Aplicativo**:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+   - Após a instalação das dependências, inicie o aplicativo no navegador com o seguinte comando:
 
-### `npm run build` fails to minify
+     ```bash
+     npm start
+     ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Isso iniciará o aplicativo localmente, e você poderá acessá-lo no navegador. Certifique-se de seguir essas etapas na ordem indicada para garantir que o projeto seja executado corretamente em sua máquina.
